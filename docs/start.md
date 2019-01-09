@@ -1,2 +1,2 @@
 # get started
-some content test webhook
+test webhook
