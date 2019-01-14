@@ -1,4 +1,5 @@
 site_name: VideoOS
 nav:
-    - 文档: docs.md
-    - 下载: download.md
+  - '简介': 'index.md'
+  - '文档': 'docs.md'
+  - '下载': 'download.md'
