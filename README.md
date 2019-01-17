@@ -1,5 +1,5 @@
 # VideoOS
-开源视频小程序 http://videojj.com/videoos/
+开源视频小程序 http://videojj.com/videoos-open/
 
 # 项目构成
 VideoOS 由4个项目组成 
