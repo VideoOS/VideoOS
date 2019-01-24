@@ -5,5 +5,6 @@ VideoOS 由4个项目组成
 * VideoOS 安卓端SDK：[VideoOS-Android-SDK](https://github.com/VideoOS/VideoOS-Android-SDK) 
 * VideoOS 服务端：[VideoOS-server](https://github.com/VideoOS/VideoOS-server) 
 * VideoOS 控制台：[VideoOS-console](https://github.com/VideoOS/VideoOS-console) 
+* VideoOS lua小程序：[VideoOS-lua-app](https://github.com/VideoOS/VideoOS-lua-app)
 
 如果是使用Video++提供的云服务，只需要接入iOS端/安卓端的SDK；如果需要本地化部署，另外需要单独部署服务端和控制台
