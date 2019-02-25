@@ -5,3 +5,4 @@ markdown_extensions:
 nav:
   - '简介': 'index.md'
   - '下载': 'download.md'
+  - '老版本': 'oldversion.md'

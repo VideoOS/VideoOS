@@ -2,7 +2,7 @@
 开源视频小程序 http://videojj.com/videoos-open/
 
 # 项目构成
-VideoOS 由4个项目组成 
+VideoOS open由4个项目组成 
 - VideoOS iOS端SDK：[VideoOS-iOS-SDK](https://github.com/VideoOS/VideoOS-iOS-SDK)
 - VideoOS 安卓端SDK：[VideoOS-Android-SDK](https://github.com/VideoOS/VideoOS-Android-SDK)
 - VideoOS 控制台：[VideoOS-console](https://github.com/VideoOS/VideoOS-console)
