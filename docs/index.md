@@ -1,5 +1,5 @@
 # 简介
-VideoOS open由4个项目组成
+VideoOS open由5个项目组成
 
 * VideoOS iOS端SDK：[VideoOS-iOS-SDK](http://docs.videojj.com/docs/videoos-ios-sdk) 
 * VideoOS 安卓端SDK：[VideoOS-Android-SDK](http://docs.videojj.com/docs/videoos-android-sdk) 
