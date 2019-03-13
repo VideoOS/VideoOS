@@ -18,8 +18,12 @@ VideoOS open由5个项目组成
 ### VideoOS快速启动
 ```
 1、安装docker
-
+# Centos/RHEL系统执行:
 shell> yum install docker docker-compose -y 
+
+# Ubuntu/Debian系统执行:
+shell> apt-get install docker docker-compose 
+
 
 2、下载启动脚本
 
@@ -37,7 +41,7 @@ shell> vim /etc/hosts
 
 shell> cd VideoOS/docker
 shell> vim .env
-# 将DOMAIN_NAME后面的域名改成你dns或者hosts文件里面绑定的域名
+# 将DOMAIN_NAME后面的域名改成你dns绑定的域名或者本地hosts文件里面绑定的域名
 
 DOMAIN_NAME=demo.os-open.com
 
