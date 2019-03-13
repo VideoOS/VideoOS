@@ -15,7 +15,7 @@ VideoOS open由5个项目组成
 
 ---
 
-### VideoOS一键部署
+### VideoOS快速启动
 ```
 1、安装docker
 
