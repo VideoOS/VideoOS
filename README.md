@@ -43,13 +43,13 @@ shell> cd VideoOS/docker
 shell> vim .env
 # 将DOMAIN_NAME后面的域名改成你dns绑定的域名或者本地hosts文件里面绑定的域名
 
-DOMAIN_NAME=demo.os-open.com
+DOMAIN_NAME=demo.os-open.com:18080
 
 5、启动服务
 
 shell> docker-compose up -d 
 
 6、访问服务
-# 打开浏览器输入绑定的域名：http://demo.os-open.com
+# 打开浏览器输入绑定的域名：http://demo.os-open.com:18080
 # 默认账号密码：admin/admin123
 ```

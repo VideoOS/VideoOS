@@ -1,8 +1,8 @@
 version: "2"
 services:
-  mysql:
+  os_open_mysql:
      image: mysql:5.6
-     container_name: mysql
+     container_name: os_open_mysql
      volumes:
        - /data/mysql:/var/lib/mysql
      restart: always
@@ -12,85 +12,84 @@ services:
        MYSQL_USER: os_open_user
        MYSQL_PASSWORD: os_open_pwd
 
-  redis:
-    container_name: redis
+  os_open_redis:
+    container_name: os_open_redis
     image: redis:4.0.13
     ports:
-      - "6379:6379"
+      - "16379:6379"
     command: redis-server --requirepass 'redis_pwd'
     volumes:
       - /data/redis:/data
     restart: always
 
-  emq:
-    image: registry.cn-beijing.aliyuncs.com/os-open/emqttd-docker-v2.3.11
-    container_name: emqtt
-    hostname: emqtt
+  os_open_emq:
+    image: registry.cn-beijing.aliyuncs.com/os-open/emqttd-docker-v2.3.11:latest
+    container_name: os_open_emqtt
+    hostname: os_open_emqtt
     ports:
-      - 1883:1883
-      - 8083:8083
-      - 8883:8883
-      - 8084:8084
-      - 18083:1808
+      - 11883:1883
+      - 18083:8083
+      - 18883:8883
+      - 18084:8084
+      - 11808:1808
     command: /opt/emqttd/start.sh
     restart: always
 
 
-  rabbitmq:
+  os_open_rabbitmq:
     image: rabbitmq:3.7.12
-    container_name: rabbitmq
-    hostname: rabbitmq
+    container_name: os_open_rabbitmq
+    hostname: os_open_rabbitmq
     ports:
-      - 5672:5672
-      - 4369:4369
+      - 15672:5672
+      - 14369:4369
     restart: always
     environment:
       RABBITMQ_DEFAULT_USER: admin
       RABBITMQ_DEFAULT_PASS: admin
 
-  manage:
+  os_open_manage:
     image: registry.cn-beijing.aliyuncs.com/os-open/manage:latest
-    container_name: manage
-    hostname: manage
+    container_name: os_open_manage
+    hostname: os_open_manage
     ports:
-      - 8081:80
-      - 22:22
+      - 18081:80
     command: bash -c 'bash /tmp/import.sh && /usr/bin/supervisord'
     restart: always
     depends_on:
-      - mysql
-      - emq
-      - redis
-      - rabbitmq
+      - os_open_mysql
+      - os_open_emq
+      - os_open_redis
+      - os_open_rabbitmq
     links:
-      - rabbitmq
+      - os_open_rabbitmq
 
-  api:
+  os_open_api:
     image: registry.cn-beijing.aliyuncs.com/os-open/api:latest
-    container_name: api
-    hostname: api
+    container_name: os_open_api
+    hostname: os_open_api
     ports:
-      - 8082:80
+      - 18082:80
     depends_on:
-      - mysql
-      - emq
-      - redis
-      - rabbitmq
+      - os_open_mysql
+      - os_open_emq
+      - os_open_redis
+      - os_open_rabbitmq
     links:
-      - rabbitmq
-      - manage
+      - os_open_rabbitmq
+      - os_open_manage
     command: /usr/bin/supervisord
     restart: always
 
-  console:
+  os_open_console:
     image: registry.cn-beijing.aliyuncs.com/os-open/console:latest
     container_name: os-open-console
     hostname: os-open-console
     ports:
-      - 80:80
+      - 18080:80
     command: /usr/bin/supervisord
     restart: always
     links:
-      - manage
+      - os_open_manage
     environment:
       DOMAIN_NAME:
