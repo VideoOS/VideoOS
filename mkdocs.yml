@@ -1,4 +1,4 @@
-site_name: VideoOS
+site_name: VideoOS open
 repo_url: https://github.com/VideoOS/VideoOS
 markdown_extensions:
   - admonition
