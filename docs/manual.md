@@ -1,8 +1,8 @@
 # 操作手册
-在项目集成了SDK后，需要在控制台配置相应的资源进行投放，只需简单五步即可快速入门
+登录[VideoOS open的控制台](https://os-saas.videojj.com/)，需要在控制台配置相应的资源进行投放，只需简单五步即可快速入门
 
 ## 第一步：申请AppKey
-点击左侧导航“应用管理”=>“申请AppKey”，完成后会生成一对AppKey和AppSecret，AppKey是应用的唯一标识，AppSecret是对应的密钥，在第二步集成SDK的时候需要用到
+点击左侧导航“应用管理”=>“申请AppKey”，完成后会生成一对`AppKey`和`AppSecret`，`AppKey`是应用的唯一标识，`AppSecret`是对应的密钥，在第二步集成SDK的时候需要用到
 ## 第二步：集成SDK
 SDK对接文档请参考：
 

@@ -6,6 +6,6 @@ nav:
   - '简介': 'index.md'
   - 'iOS SDK': 'iOS-SDK.md'
   - 'Android SDK': 'Android-SDK.md'
-  - '操作手册': 'manual.md'
+  - '控制台操作手册': 'manual.md'
   - '下载': 'download.md'
   - '老版本': 'oldversion.md'

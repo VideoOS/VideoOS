@@ -14,7 +14,7 @@ SDK对接文档请参考：
 服务端为移动端SDK和控制台提供API
 
 ### 控制台
-控制台提供创建小程序，管理投放等日常运营功能，查看控制台的[操作手册](manual.md)
+控制台提供创建小程序，管理投放等日常运营功能，查看[控制台操作手册](manual.md)
 
 ### lua小程序
 视频小程序基于[LuaViewSDK](https://github.com/alibaba/LuaViewSDK)，一个小程序由若干lua脚本文件加一个json配置文件组成
