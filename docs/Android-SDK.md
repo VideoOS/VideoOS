@@ -201,11 +201,3 @@ plusView.stop();
 2. 文档中的代码仅供参考，实际参数请根据项目自行配置。
 3. 请将互动层置于合适位置以防阻挡事件分发操作。
 4. 最佳位置为加载控制栏的下方,播放器上方。
- 
-## 本地化配置
-
-### host配置
-修改`VideoOS/VenvyLibrary/src/main/java/cn/com/venvy/Config.java`中`HOST_VIDEO_OS`地址
-
-### 加密key设置
-修改`VideoOS/VenvyLibrary/src/main/java/cn/com/venvy/common/utils/VenvyRSAUtil.java`中`KEY_PUBLIC`值
