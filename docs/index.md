@@ -10,6 +10,8 @@ SDK对接文档请参考：
 * [VideoOS iOS SDK](iOS-SDK.md)
 * [VideoOS Android SDK](Android-SDK.md)
 
+试用接入SDK的[DEMO](demo.md)
+
 ### 服务端
 服务端为移动端SDK和控制台提供API
 
