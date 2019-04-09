@@ -12,7 +12,7 @@ repositories {
   maven { url 'https://dl.bintray.com/videoli/maven/' }
 }
 dependencies {
-  implementation 'com.videoli:VideoOS-SAAS:1.0.0'
+  implementation 'com.videoli:VideoOS:1.0.0'
 }
 ```
 
@@ -55,20 +55,26 @@ compile 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.0.2'
 ### SDK初始化
 在 `Application`项目入口初始化SDK。
 
-示例代码：
+使用saas版本，参考[控制台操作手册](manual.md)  
+saas版本示例代码：
 
 ```java
-VideoPlus.appCreateSAAS(MyApp.this, appKey, appSecret);
+VideoPlus.appCreateSAAS(MyApp.this, appKey, appSecret); //appKey, appSecret 请去控制台查看
 ```
+开源版本示例代码：
+```java
+VideoPlus.appCreate(MyApp.this);
+```
+
 ### 对接`VideoPlusView`
 	
-1. 根据需要接入的`SDK`创建`VideoOsView`，将`SDK`需要的信息配置在`VideoPlusAdapter`中。
+1.根据需要接入的`SDK`创建`VideoOsView`，将`SDK`需要的信息配置在`VideoPlusAdapter`中。
 	
 	* videoID 为点播视频url或直播房间号
 	* types 为视频类型（点播or直播），默认为点播(注：VideoType.VIDEOOS 表示点播，VideoType.LIVEOS 表示直播)
 
 
-2. 初始化`VideoPlusAdapter`， `VideoOsView`就是生成的互动层，将这个`view`添加到播放器层之上就可以了。`SDK`所需参数需复写VideoPlusAdapter相关方法,详细作用请看注释。
+2.初始化`VideoPlusAdapter`， `VideoOsView`就是生成的互动层，将这个`view`添加到播放器层之上就可以了。`SDK`所需参数需复写VideoPlusAdapter相关方法,详细作用请看注释。
 
 ```java
 //适配器VideoPlusAdapter (注：VideoView代表平台播放器,非必填)
@@ -84,11 +90,13 @@ public class PlusAdapter extends VideoPlusAdapter {
      * 设置配置信息
      * @return Provider配置信息类
      * 注:setVideoID(String videoId)为点播视频ID,直播为房间号
-     *    setVideoType(VideoType videoType)为视频类型，VideoType.VIDEOOS点播 VideoType.LIVEOS直播
+     *    setVideoType(VideoType videoType)为视频类型，VideoType.VIDEOOS点播
+     *    appKey 平台创建的应用信息（注：saas版本需要设置）
+     *    appSecret 平台创建的应用信息（注：saas版本需要设置）
      */
     @Override
     public Provider createProvider() {
-        Provider provider = new Provider.Builder().setVideoID(String.valueOf(12)).setVideoType(VideoType.LIVEOS).build();
+        Provider provider = new Provider.Builder().setAppKey(String info).setAppSecret(String info).setVideoID(String.valueOf(12)).setVideoType(VideoType.VIDEOOS).build();
         return provider;
     }
 
@@ -153,7 +161,7 @@ public class PlusAdapter extends VideoPlusAdapter {
 /* 详细调用请查看 VideoOS/app_demo 项目 */
 ```
  
-3. 接着设置适配器，代码如下所示
+3.接着设置适配器，代码如下所示
 
 ```java
 VideoPlusView plusView = new VideoOsView(Context context);
@@ -161,15 +169,15 @@ PlusAdapter plusAdapter = new PlusAdapter(MediaPlay play);
 plusView.setVideoOSAdapter(plusAdapter);
 ```
 
-4. 全部完成之后调用 `start` ，开启互动层
+4.全部完成之后调用 `start` ，开启互动层
 ```java
 plusView.start();
 ```
-5. 如退出播放页面或直播间，调用`stop`方法
+5.如退出播放页面或直播间，调用`stop`方法
 ```java
 plusView.stop();
 ```
-6. 其它
+6.其它
 
    6.1屏幕旋转处理（注：FULL_VERTICAL,SMALL_VERTICAL,LANDSCAPE分别代表平台方播放器界面调用）：
    ```java
