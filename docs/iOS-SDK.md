@@ -22,18 +22,30 @@ use_frameworks!
 ### SDK初始化
 在 `AppDelegate.m` 文件中导入 `<VideoPlsInterfaceControllerSDK/VPIConfigSDK.h>` ，并在 `application:didFinishLaunchingWithOptions:` 方法中初始化SDK。
 
-示例代码：
+使用saas版本，参考[控制台操作手册](manual.md)  
+saas版本示例代码：
 
 ```objective-c
 #import <VideoPlsInterfaceControllerSDK/VPIConfigSDK.h>
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{ 
     //other code
-    [VPIConfigSDK setAppKey:@"550ec7d2-6cb0-4f46-b2df-2a1505ec82d8" appSecret:@"d0bf7873f7fa42a6"];
+    [VPIConfigSDK setAppKey:@"550ec7d2-6cb0-4f46-b2df-2a1505ec82d8" appSecret:@"d0bf7873f7fa42a6"]; //appKey, appSecret 请去控制台查看
     [VPIConfigSDK initSDK];
     //other code
 }
 ```
+开源版本示例代码：
+```objective-c
+#import <VideoPlsInterfaceControllerSDK/VPIConfigSDK.h>
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{ 
+    //other code
+    [VPIConfigSDK initSDK];
+    //other code
+}
+```
+
 ### 对接`VPInterfaceController`
 	
 1. 根据需要接入的`SDK`创建`VPInterfaceControllerConfig`，将`SDK`需要的信息配置在`config`中。
