@@ -16,7 +16,7 @@ SDK对接文档请参考：
 试用接入SDK的[DEMO](demo.md)
 
 ### 控制台
-控制台提供创建小程序，管理投放等日常运营功能，查看[控制台操作手册](manual.md)
+移动端SDK接入完成后，请登入[控制台](https://os-saas.videojj.com)。控制台提供创建小程序，管理投放等日常运营功能，查看[控制台操作手册](manual.md)
 
 ### lua小程序
 视频小程序基于[LuaViewSDK](https://github.com/alibaba/LuaViewSDK)，一个小程序由若干lua脚本文件加一个json配置文件组成
