@@ -1,7 +1,7 @@
 # 简介
 
 ## 项目构成
-VideoOS open由4个部分组成，包括移动端SDK、服务端、控制台、lua小程序
+VideoOS open提供云服务版本和开源版本。云服务版本提供更加丰富的功能，免去了本地化部署的繁琐步骤，适合大部分中小型客户；开源版本只提供了基础的小程序管理和投放功能，可以进行二次开发集成，适合大型客户。
 
 !!! note
     如果是使用Video++提供的[云服务](https://os-saas.videojj.com)，只需要接入移动端SDK；如果需要本地化部署，另外需要单独部署服务端和控制台。
@@ -15,9 +15,6 @@ SDK对接文档请参考：
 
 试用接入SDK的[DEMO](demo.md)
 
-### 服务端
-服务端为移动端SDK和控制台提供API
-
 ### 控制台
 控制台提供创建小程序，管理投放等日常运营功能，查看[控制台操作手册](manual.md)
 
@@ -25,7 +22,7 @@ SDK对接文档请参考：
 视频小程序基于[LuaViewSDK](https://github.com/alibaba/LuaViewSDK)，一个小程序由若干lua脚本文件加一个json配置文件组成
 
 ## 开源
-开源版本的项目代码已经在github公开：[https://github.com/VideoOS](https://github.com/VideoOS)
+开源版本的项目代码已经在github公开：[https://github.com/VideoOS](https://github.com/VideoOS)，大家可以自行下载源码进行本地化部署
 
 ## 关于PC Web端
 新版本的VideoOS open聚焦移动端开发，暂不支持PC Web端，如果你的产品形态是PC Web，那么请移步[VideoOS 老版本](oldversion.md)
