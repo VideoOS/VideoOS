@@ -1,4 +1,6 @@
 # DEMO
 
-* [VideoOS-iOS-demo](https://fir.im/VPUnionSDKDemo)
-* [VideoOS-Android-demo](https://fir.im/juv)
+* [iOS](https://fir.im/VideoOSDemo?openId=oGB0Cj7FFUK_KAiLIWF4coTszMH4)  
+![VideoOS-iOS-demo](https://static.videojj.com/dev/Image/VideoOS-SDK-demo-iOS.png)
+* [Android](https://fir.im/OSDemoAndroid?openId=oGB0Cj7FFUK_KAiLIWF4coTszMH4)  
+![VideoOS-Android-demo](https://static.videojj.com/dev/Image/VideoOS-SDK-demo-Android.png)
