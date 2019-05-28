@@ -2,6 +2,12 @@ site_name: VideoOS open
 repo_url: https://github.com/VideoOS/VideoOS
 markdown_extensions:
   - admonition
+theme:
+  name: readthedocs
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - rust
 nav:
   - '简介': 'index.md'
   - 'iOS SDK': 'iOS-SDK.md'
@@ -10,3 +16,4 @@ nav:
   - '下载': 'download.md'
   - 'DEMO': 'demo.md'
   - '老版本': 'oldversion.md'
+  
