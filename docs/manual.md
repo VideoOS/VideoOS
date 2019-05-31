@@ -1,4 +1,4 @@
-# 操作手册
+# 快速接入
 注册/登录[VideoOS open的控制台](https://os-saas.videojj.com/)，需要在控制台配置相应的资源进行投放，只需简单五步即可快速入门
 
 ## 第一步：申请AppKey
