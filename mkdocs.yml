@@ -10,10 +10,9 @@ theme:
     - rust
 nav:
   - '简介': 'index.md'
-  - 'iOS SDK': 'iOS-SDK.md'
-  - 'Android SDK': 'Android-SDK.md'
-  - '控制台操作手册': 'manual.md'
+  - '快速接入': 'manual.md'
+  - '视频小程序': 'lua-app.md'
+  - 'json schema': 'jsonschema.md'
   - '下载': 'download.md'
   - 'DEMO': 'demo.md'
   - '老版本': 'oldversion.md'
-  

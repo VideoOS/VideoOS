@@ -3,6 +3,4 @@
 
 * VideoOS-iOS-SDK: [VideoOS-iOS-SDK-latest.zip](https://github.com/VideoOS/VideoOS-iOS-SDK/archive/master.zip)
 * VideoOS-Android-SDK: [VideoOS-Android-SDK-latest.zip](https://github.com/VideoOS/VideoOS-Android-SDK/archive/master.zip)
-* VideoOS-server: [VideoOS-server-latest.zip](https://github.com/VideoOS/VideoOS-server/archive/master.zip) 
-* VideoOS-console: [VideoOS-console-latest.zip](https://github.com/VideoOS/VideoOS-console/archive/master.zip) 
 * VideoOS-lua-app: [VideoOS-lua-app-latest.zip](https://github.com/VideoOS/VideoOS-lua-app/archive/master.zip) 
