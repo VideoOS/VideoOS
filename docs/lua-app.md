@@ -30,7 +30,7 @@ json配置文件规范详情参考：[json schema](#jsonschema.md)
 
 ## 新增主题
 点击左侧导航“开发配置”=>“主题管理”=>“新增主题”，在弹出的对话框中设置“所属类型”“主题名称”和“文件上传”，“文件上传”需要上传一个ZIP的压缩包，压缩包须有一个文件名以hotspot.lua结尾，lua脚本文件负责小程序的具体前端展示和业务逻辑  
-OS Lua 的API请参考：[OS Lua](http://docs.videojj.com/docs/videoos-lua-app)  
+
 ```lua
 -- helloworld_hotspot.lua --
 
@@ -38,10 +38,18 @@ OS Lua 的API请参考：[OS Lua](http://docs.videojj.com/docs/videoos-lua-app)
 
 ```
 
-lua脚本编写完成，请用zip命令打包
+lua脚本编写完成，请用zip命令打包，再上传
 ```shell
 zip -r helloworld.zip helloworld_hotspot.lua
 ```
+SDK对接文档请参考：  
+
+* <a href="http://docs.videojj.com/docs/videoos-ios-sdk" target="_blank">VideoOS iOS SDK</a>
+* <a href="http://docs.videojj.com/docs/videoos-android-sdk" target="_blank">VideoOS Android SDK</a>
+
+OS Lua 的API请参考：  
+
+* [OS Lua](http://docs.videojj.com/docs/videoos-lua-app)  
 
 ## 创建小程序
 点击左侧导航“小程序管理”=>“我的小程序”=>“创建小程序”，在弹出的对话框中设置“小程序名称”“选择行业”“选择主题”“封面图”  
