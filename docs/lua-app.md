@@ -32,6 +32,8 @@ json配置文件规范详情参考：[json schema](#jsonschema.md)
 点击左侧导航“开发配置”=>“主题管理”=>“新增主题”，在弹出的对话框中设置“所属类型”“主题名称”和“文件上传”，“文件上传”需要上传一个ZIP的压缩包，压缩包须有一个文件名以hotspot.lua结尾，lua脚本文件负责小程序的具体前端展示和业务逻辑  
 
 ```lua
+-- 程序入口文件 helloworld_hotspot.lua
+
 -- 每一个lua脚本的入口——show函数。相当于java的main函数
 function show(args)
     if (args == nil or args.data == nil) then
