@@ -50,6 +50,7 @@ function show(args)
     helloLabel:textSize(20)
     helloLabel:text(args.data.data.name)
     helloLabel:alignCenter()
+    -- iOS平台需要设置frame才能显示，Android不需要
     helloLabel:frame(0,0,100,100)
     rootView:addView(helloLabel)
 
