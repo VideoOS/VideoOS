@@ -50,7 +50,7 @@ function show(args)
     helloLabel:textSize(20)
     helloLabel:text(args.data.data.name)
     helloLabel:alignCenter()
-
+    helloLabel:frame(0,0,100,100)
     rootView:addView(helloLabel)
 
 end
