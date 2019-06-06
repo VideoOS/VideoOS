@@ -188,6 +188,5 @@ $ref 用来引用其它schema
     
 当一个schema写的很大的时候，可能需要definitions创建内部结构体，再使用$ref进行引用
 ### 参考文档
-[react-jsonschema](https://www.npmjs.com/package/pensee-react-jsonschema-form#for-boolean-fields "文档地址")
-
-[json-schema](https://json-schema.org/understanding-json-schema/reference/object.html "json-schema")
+* <a href="https://json-schema.org/understanding-json-schema/reference/object.html" target="_blank">json-schema</a>
+* <a href="https://www.npmjs.com/package/pensee-react-jsonschema-form#for-boolean-fields" target="_blank">react-jsonschema</a>
