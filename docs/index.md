@@ -16,9 +16,9 @@ SDK对接文档请参考：
 ### 控制台
 移动端SDK接入完成后，请登入<a href="https://os-saas.videojj.com" target="_blank">控制台</a>。控制台提供创建小程序，管理投放等日常运营功能，查看[快速接入](manual.md)
 
-### lua小程序
+### 视频小程序
 视频小程序基于<a href="http://docs.videojj.com/docs/videoos-lua-app" target="_blank">OS Lua</a>，一个小程序由一个json配置文件加若干lua脚本文件组成  
-json配置文件规范详情参考：[json schema](jsonschema.md)
+查看[视频小程序教程](lua-app.md)，手把手教你写一个”Hello World!“小程序  
 
 ## 开源
 开源版本的项目代码已经在github公开：<a href="https://github.com/VideoOS" target="_blank">https://github.com/VideoOS</a>，大家可以自行下载源码进行本地化部署
