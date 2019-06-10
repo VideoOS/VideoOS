@@ -69,7 +69,7 @@ SDK对接文档请参考：
 
 OS Lua 的API请参考：  
 
-* [OS Lua](http://docs.videojj.com/docs/videoos-lua-app)  
+* <a href="http://docs.videojj.com/docs/videoos-lua-app" target="_blank">OS Lua</a>  
 
 ## 创建小程序
 点击左侧导航“小程序管理”=>“我的小程序”=>“创建小程序”，在弹出的对话框中设置“小程序名称”“选择行业”“选择主题”“封面图”  
