@@ -8,6 +8,8 @@ theme:
   hljs_languages:
     - yaml
     - rust
+extra_javascript:
+  - javascript/anchor.js
 nav:
   - '简介': 'index.md'
   - '快速接入': 'manual.md'
