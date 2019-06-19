@@ -92,3 +92,6 @@ OS Lua 的API请参考：
 下载[DEMO](demo.md)，打开DEMO App，点开右上角设置，填写对应的`AppKey`和`AppSecret`，然后根据上一步进行投放，就可以在对应视频中看到效果啦  
 ![横屏效果](https://static.videojj.com/dev/Image/appdemo-landscape.png "landscape")
 ![竖屏效果](https://static.videojj.com/dev/Image/appdemo-portrait.png "portrait")
+
+## 下一步
+到这里，相信你对如果创建一个自定义视频小程序有一个初步的认知了，深入学习请移步<a href="http://docs.videojj.com/docs/videoos-lua-app" target="_blank">OS Lua</a>  
