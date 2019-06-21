@@ -285,4 +285,5 @@ $ref 用来引用其它schema
 * <a href="https://json-schema.org/understanding-json-schema/reference/object.html" target="_blank">json-schema</a>
 * <a href="https://www.npmjs.com/package/pensee-react-jsonschema-form#for-boolean-fields" target="_blank">react-jsonschema</a>
 * <a href="https://mozilla-services.github.io/react-jsonschema-form/" target="_blank">react-jsonschema-form</a>
+* <a href="https://react-jsonschema-form.readthedocs.io/en/latest/" target="_blank">react-jsonschema-form文档</a>
 
