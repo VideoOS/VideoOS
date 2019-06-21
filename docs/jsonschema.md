@@ -4,10 +4,11 @@
 #### 基础数据结构
 ```json
 {
-  "key": "yuntu",
   "type": "object",
   "description": "A product from video++",
   "required": ["creativeName", "interactionTemplateId"],
+  "imageArrKey": [],
+  "videoArrKey": [],
   "properties": {
     "creativeName": {
       "title": "素材名称",
@@ -25,13 +26,15 @@
 ```
     
 
-| 关键字  |  描述 |类型|
+| 参数  |  描述 |类型|
 |--|:--:|--:|
 | title  |  标题，用来描述结构 |String|
 | type    |  类型  |String|
 | description   |  描述 |String|
 | required   |  必需属性 |Array|
 | properties    |  定义属性 |Object|
+| imageArrKey    |  上传图片字段 |Array|
+| videoArrKey    |  上传视频字段 |Array|
 
 上面只是一个简单的例子，从上面可以看出Json schema 本身是一个JSON字符串，由通过key-value的形式进行标示。
 type 和 properties 用来定义json 属性的类型。required 是对properties字段中属性的必需性进行约束,在其中creativeName为本项目小程序素材名称为必填项。
@@ -45,19 +48,24 @@ properties定义每个属性的名字和类型
       "title": "素材名称",
       "type": "string",
       "maxLength": 30,
-    "default": "A new task"
+      "default": "A new task"
     },
     "interactionTemplateId": {
       "title": "素材主题",
       "type": "integer",
       "enum": [],
       "enumNames": []
+    },
+    "linkUrl": {
+      "type": "string",
+      "title": "跳转外链链接",
+      "format": "uri"
     }
   }
 }
 ```
 
-| 关键字  |  描述 |类型|
+| 参数  |  描述 |类型|
 |--|:--:|--:|
 | title  |  标题，用来描述结构 |String|
 | type    |  类型  |String|
@@ -67,11 +75,19 @@ properties定义每个属性的名字和类型
 | enum     |  enumName中的属性 |String|
 | enumNames |  下拉列表 |String|
 
+##### format属性
+| 参数  |  描述 |类型|
+|--|:--:|--:|
+| email  |  使用一个input[type=email]元素 |String|
+| uri    |  使用一个input[type=url]元素  |String|
+| data-url   |  默认情况下，使用一个input[type=file]元素; 如果字符串是数组的一部分，将自动处理多个文件 |String|
+| date    |  默认情况下，使用一个input[type=date]元素; |String |
+| date-time    |  默认情况下，使用input[type=datetime-local]元素。 |String|
+
 #### type:Json schema 类型
 ##### Object
 ```json
 {
-  "key": "yuntu",
   "type": "object",
   "description": "A product from video++",
   "required": ["creativeName", "interactionTemplateId"],
@@ -104,7 +120,7 @@ object类型有三个关键字:type（限定类型）,properties(定义object的
     
 array有三个单独的属性:items,minItems,uniqueItems:
 
-| 关键字  |  描述 |类型|
+| 参数  |  描述 |类型|
 |--|:--:|--:|
 | items   |  array 每个元素的类型 |Object|
 | minItems     |  约束属性，数组最小的元素个数  |Number|
@@ -124,14 +140,14 @@ array有三个单独的属性:items,minItems,uniqueItems:
 }
 ```
 
-| 关键字  |  描述 |类型|
+| 参数  |  描述 |类型|
 |--|:--:|--:|
 | maxLength   |	定义字符串的最大长度，>=0 |Number|
 | minLength     |  定义字符串的最小长度，>=0  |Number|
 | pattern    |  用正则表达式约束字符串 |String|
 
 #### integer , number 
-|关键字|描述|类型|
+|参数|描述|类型|
 |--|:--:|--:|
 |minimum |最小值 |Number|
 |exclusiveMinimum |如果存在 "exclusiveMinimum" 并且具有布尔值 true，如果它严格意义上大于 "minimum" 的值则实例有效。|Boolean|
@@ -140,13 +156,91 @@ array有三个单独的属性:items,minItems,uniqueItems:
 
 #### boolean 
 true or false
+
+### 上传图片与视频
+在json中新添加uiSchema处理规则，使用imageArrKey，videoArrKey两个数组来处理需要uiSchema替换的ui组件达到上传视频与图片的目的。
+当在数组对象中设置图片时需设置对象的层级，如下示例中的'fixedItemsList','answerList'字段最终的值为'file'。
+```json
+{
+  "imageArrKey":["img1",{
+    "fixedItemsList":{"additionalItems":"file"}
+  },{
+    "answerList":{
+      "items":["file","file"]
+    }
+  }],
+  "videoArrKey":["vd1","vd2"],
+  "title": "",
+  "type": "object",
+  "required": [
+    "creativeName",
+    "description"
+  ],
+  "properties": {
+    "creativeName": {
+      "title": "素材名称",
+      "type": "string",
+      "maxLength": 10
+    },
+    "description": {
+      "title": "题目",
+      "type": "string",
+      "maxLength": 30
+    },
+    "answerList": {
+      "type": "array",
+      "title": "选项",
+      "items": [
+        {
+          "title": "图片",
+          "type": "string"
+        },
+        {
+          "title": "图片",
+          "type": "string"
+        }
+      ]
+    },
+    "fixedItemsList": {
+      "type": "array",
+      "title": "A list of fixed items",
+      "items": [
+        {
+          "title": "A string value",
+          "type": "string"
+        },
+        {
+          "title": "a boolean value",
+          "type": "string"
+        }
+      ],
+      "additionalItems": {
+        "title": "Additional item",
+        "type": "string"
+      }
+    },
+    "isShowClose": {
+      "type": "boolean",
+      "title": "关闭按钮是否可见",
+      "default": true
+    },
+    "img1": {
+      "type": "string",
+      "title": "热点图片"
+    },
+    "vd1": {
+      "type": "string",
+      "title": "热点视频"
+    }
+  }
+}
+```
 ### 进阶
 #### $ref
 $ref 用来引用其它schema
 
 ```json
 {
-  "key": "kapai",
   "definitions": {
     "Item": {
       "type": "object",
