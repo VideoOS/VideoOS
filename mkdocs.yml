@@ -8,9 +8,14 @@ theme:
   hljs_languages:
     - yaml
     - rust
+extra_javascript:
+  - javascript/anchor.js
 nav:
   - '简介': 'index.md'
   - '快速接入': 'manual.md'
+  - 'iOS SDK': 'http://docs.videojj.com/docs/videoos-ios-sdk'
+  - 'Android SDK': 'http://docs.videojj.com/docs/videoos-android-sdk'
+  - 'OS Lua': 'http://docs.videojj.com/docs/videoos-lua-app'
   - '视频小程序': 'lua-app.md'
   - 'json schema': 'jsonschema.md'
   - '下载': 'download.md'
