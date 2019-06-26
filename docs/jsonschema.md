@@ -317,7 +317,9 @@ uiSchema “ui:widget”属性告诉表单应该使用哪个UI小部件来呈现
 | color |  使用一个input[type=color]元素 |String|
 | imgBtn | 上传图片组件 |String|
 | videoBtn |  上传视频组件 |String|
+
 内置字符串字段还支持JSONSchema format属性，并且默认情况下会为以下字符串格式呈现适当的小部件：
+
 | 值  |  描述 |类型|
 |--|:--:|--:|
 | email  |  使用一个input[type=email]元素 |String|
