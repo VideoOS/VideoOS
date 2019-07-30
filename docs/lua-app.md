@@ -15,7 +15,7 @@ VideoOS open 的动态化解决方案基于阿里开源的 LuaViewSDK。Lua 是�
 
 ## 官方小程序
 官方目前已经开发了气泡对话、卡牌收集、中插广告、投票、云图等小程序，用户也可以对这些应用的 Lua 脚本稍作修改，针对各自的行业做定制化开发。
-官方小程序代码已经在github开源：<a href="(https://github.com/VideoOS/VideoOS-lua-app" target="_blank">VideoOS-lua-app</a>
+官方小程序代码已经在github开源：<a href="https://github.com/VideoOS/VideoOS-lua-app" target="_blank">VideoOS-lua-app</a>
 
 # Hello world
 让我们从写一个“Hello world!”小程序开始，学习如何编写你自己的视频小程序应用。一个小程序由一个json配置文件加若干lua脚本文件组成
