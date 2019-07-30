@@ -1,28 +1,13 @@
-# 简介
+# VideoOS open介绍
+VideoOS open是为视频流量主提供小程序应用、AI场景下的流量价值转化以及全面的服务整合方案，构建基于视频场景下的视联网生态。
 
-## 项目介绍
-极链科技推出的<a href="http://videojj.com/videoos-open/" target="_blank">VideoOS open</a>是一个完整的视频小程序开源平台
+主要包含以下服务：视频广告变现、视频小程序、AI云
 
-### 移动端SDK
-移动端SDK提供用户在自己的移动端APP视频播放器上接入视频小程序的能力，是小程序的运行环境，要求开发者具有一定的移动端原生开发能力  
-接入移动端SDK前，需要先登入控制台创建AppKey
+## 视频广告变现
+流量主在ASMP后台，导入要变现的视频，AI会识别出视频中有价值的点位供广告主投放场景广告，流量主获得相应的变现收益。
 
-SDK对接文档请参考：  
+## 视频小程序
+视频屏内可交互的功能性或应用性的小程序，可根据运营需要配置到视频中，与内容贴合的功能性或互动类小程序，用户直接在屏内完成交互，如云图、中插、卡牌、气泡、投票、信息百科、A/B剧、轮播广告、海报、红包等。
 
-* <a href="http://docs.videojj.com/docs/videoos-ios-sdk" target="_blank">VideoOS iOS SDK</a>
-* <a href="http://docs.videojj.com/docs/videoos-android-sdk" target="_blank">VideoOS Android SDK</a>
-
-试用接入SDK的[DEMO](demo.md)
-
-### 控制台
-移动端SDK接入完成后，请登入<a href="https://os-saas.videojj.com" target="_blank">控制台</a>。控制台提供创建小程序，管理投放等日常运营功能，查看[快速接入](manual.md)
-
-### 视频小程序
-视频小程序基于<a href="http://docs.videojj.com/docs/videoos-lua-app" target="_blank">OS Lua</a>，一个小程序由一个json配置文件加若干lua脚本文件组成  
-查看[视频小程序教程](lua-app.md)，手把手教你写一个”Hello World!“小程序  
-
-## 开源
-开源版本的项目代码已经在github公开：<a href="https://github.com/VideoOS" target="_blank">https://github.com/VideoOS</a>，大家可以自行下载源码进行本地化部署
-
-## 关于PC Web端
-新版本的VideoOS open聚焦移动端开发，暂不支持PC Web端，如果你的产品形态是PC Web，那么请移步[VideoOS 老版本](oldversion.md)
+## AI云
+流量主可用于搭建平台或应用的云服务（如存储、转码、CDN加速等基础服务），并加入AI云识别，已上传的视频直接通过云端AI识别出价值的对象，用于Asmp流量变现，免费100G，价格更优惠。
