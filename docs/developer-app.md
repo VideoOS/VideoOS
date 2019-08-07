@@ -89,7 +89,7 @@ OS Lua 的API请参考：
 点击左侧导航“投放管理”=>“投放计划管理”=>“新增投放计划”，选择需要投放的小程序，进入“新增投放计划”设置页面
 
 ## 下载DEMO
-下载[DEMO](demo.md)，打开DEMO App，点开右上角设置，填写对应的`AppKey`和`AppSecret`，然后根据上一步进行投放，就可以在对应视频中看到效果啦  
+下载[DEMO](demo.md)，打开DEMO App，点开右上角设置，填写对应的`AppKey`和`AppSecret`，选择一个视频，点击“复制视频ID”拿到对应的视频ID，然后根据上一步进行投放，就可以在对应视频中看到效果啦  
 ![横屏效果](https://static.videojj.com/dev/Image/appdemo-landscape.png "landscape")
 ![竖屏效果](https://static.videojj.com/dev/Image/appdemo-portrait.png "portrait")
 
