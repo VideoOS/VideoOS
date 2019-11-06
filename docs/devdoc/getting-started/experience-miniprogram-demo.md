@@ -10,7 +10,7 @@
 
 ##看到模拟器效果
 点击模拟器首页的“视频小程序”按钮，然后点击“调试”按钮，进入相应页面。
-![](https://videojj-mobile.oss-cn-beijing.aliyuncs.com/develop_doc/deverAppDocuments/ios%20/cloud.png)
+![Screenshot_20191018-162034_videoOS](http://qiniu.mdnice.com/42974f2aff5e8f44e299eac3b12dd721.jpeg)
 
 ##视频小工具同理
 同上

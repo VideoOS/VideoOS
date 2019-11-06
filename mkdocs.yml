@@ -19,7 +19,7 @@ nav:
     - 'AI云': 'vod.md'
     - '下载 DEMO APP': 'demo.md'
   - '开发者服务':
-    - '快速开始': 'devdoc/getting-started/getting-started.md'
+    - '快速开始': 'devdoc/getting-started/mini-program.md'
     - '开发框架': 'devdoc/frame/overview.md'
     - 'Lua语言': 'http://docs.videojj.com/docs/videoos-lua-app'
     - 'JsonSchema': 'jsonschema.md'
