@@ -1,4 +1,4 @@
-site_name: 视联网文档中心
+site_name: 视联网官方文档
 repo_url: https://github.com/VideoOS/VideoOS
 markdown_extensions:
   - admonition
@@ -17,7 +17,7 @@ nav:
     - '视频广告变现': 'asmp.md'
     - '视频小程序': 'lua-app.md'
     - '智能视频云': 'vod.md'
-    - '下载 DEMO APP': 'demo.md'
+    - '下载DemoApp': 'demo.md'
   - '开发者服务':
     - '快速开始': 'devdoc/getting-started/mini-program.md'
     - '开发框架': 'devdoc/frame/overview.md'
