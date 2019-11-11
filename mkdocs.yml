@@ -10,6 +10,9 @@ theme:
     - rust
 extra_javascript:
   - javascript/anchor.js
+  - javascript/preview.js
+extra_css:
+  - css/extra.css
 nav:
   - '视联网介绍': 'index.md'
   - '流量主服务':
