@@ -14,13 +14,13 @@ Android的调试步骤[点击这里](./androiddebug.md)
 #### 第一步: Clone [VideoOS-iOS-SDK](https://github.com/VideoOS/VideoOS-iOS-SDK) 到本地
 
 #### 第二步: Xcode打开VPInterfaceControllerDemo工程，选择targets VideoOSDevAPP项目运行，这里面配置好的本地程序可以直接预览
-![](https://mybucket190612.oss-cn-shanghai.aliyuncs.com/ios_1.1.png)  
-<img style="width: 240px" src="https://mybucket190612.oss-cn-shanghai.aliyuncs.com/ios_1.2.png"/>
+![](https://videojj-mobile.oss-cn-beijing.aliyuncs.com/develop_doc/deverAppDocuments/ios%20/ios_1.1.png)  
+<img style="width: 240px" src="https://videojj-mobile.oss-cn-beijing.aliyuncs.com/develop_doc/deverAppDocuments/ios%20/ios_1.2.png"/>
 
 ##3.视频小程序调试
 ####3.1 视频小工具本地调试-Hello World 
 1.编写第一个 Hello World 程序代码 并copy 到VideoOSDevAPP/DevAppResource.bundel/interactionLua文件夹下如下是示列代码。  
-<img style="width: 340px" src="https://mybucket190612.oss-cn-shanghai.aliyuncs.com/ios_2.1.png"/>
+<img style="width: 340px" src="https://videojj-mobile.oss-cn-beijing.aliyuncs.com/develop_doc/deverAppDocuments/ios%20/ios_2.1.png"/>
 
 ```lua
 --FileName: HelloWorld.lua
@@ -144,8 +144,8 @@ json文件为 VideoOSDevAPP/DevAppResource.bundel/config.json。
 
 这里需要注意下json文件是配置文件,并不是lua运行时的数据文件;视频小程序lua运行时的数据文件,由在lua中请求服务器获取。
 
-下图为视频小程序调试文件路径图:
-<img style="width: 340px" src="https://mybucket190612.oss-cn-shanghai.aliyuncs.com/ios_2.1.png"/>
+下图为视频小程序调试文件路径图:  
+<img style="width: 340px" src="https://videojj-mobile.oss-cn-beijing.aliyuncs.com/develop_doc/deverAppDocuments/ios%20/ios_2.1.png"/>
 
 (1) **os_video_test_hotspot.lua**
 
@@ -234,7 +234,7 @@ template:表示视频小程序的入口lua文件;
 横屏播放的时候视频小程序运行在容器里,红色字体 Hello World 出现在容器的中央。
 
 如下图所示:
-![Screenshot_20191018-162034_videoOS](http://qiniu.mdnice.com/42974f2aff5e8f44e299eac3b12dd721.jpeg)
+![Screenshot_20191018-162034_videoOS](https://videojj-mobile.oss-cn-beijing.aliyuncs.com/develop_doc/deverAppDocuments/ios%20/42974f2aff5e8f44e299eac3b12dd721.jpeg)
 
 
 ###4.2 视频小程序在线调试
