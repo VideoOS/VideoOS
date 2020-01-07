@@ -1,10 +1,25 @@
-##视联网小程序lua容器通用方法
-###使用方法
-使用关键词Applet
+## 视联网小程序lua容器通用方法
+### 使用方法
+使用关键词Applet  
 lua使用```Applet:xxx()```即可  
 
 -----------------------
-####1.容器大小
+目录  
+[1.容器大小](#1)  
+[2.显示重试页面](#2)  
+[3.显示错误页面](#3)  
+[4.lua容器通用事件通知(重试页面点击通知)](#4)  
+[5.获取是否能够返回上一页](#5)  
+[6.返回上一页](#6)  
+[7.关闭当前容器](#7)  
+[8.存储本地数据](#8)  
+[9.获取本地存储数据](#9)  
+[10.打开新的小程序](#10)  
+[11.打开广告](#11)  
+[12.小程序深度统计](#12)    
+
+-----------------------
+#### <span id="1">1.容器大小</span>
 function name:```appletSize```
 
 return:
@@ -20,8 +35,8 @@ width, height
 local width, height = Applet:appletSize()
 ``` 
 
---
-####2.显示重试页面
+---
+#### <span id="2">2.显示重试页面</span>
 场景: 在lua内部网络请求失败时，没有可展示页面可以调用该方法来展示一个默认的重试页  
 function name: ```showRetryPage```
 
@@ -44,8 +59,8 @@ dataTable["data"] = "test"
 Applet:showRetryPage("信号不好，请重试", dataTable)
 ```
 
---
-####3.显示错误页面
+---
+#### <span id="3">3.显示错误页面</span>
 场景: 在lua内部网络请求发生异常或者没有数据(非网络链接问题)，也没有能继续相应的页面展示时可以调用该方法来展示默认的错误页面  
 注意: 调用此方法表示该页面无法继续展示，如果是子页面可以通过返回键来回退到上个页面，不然只能关闭  
 function name: ```showErrorPage```
@@ -63,8 +78,8 @@ parameters:
 Applet:showErrorPage("小程序发生异常，请稍后再试")
 ```
 
---
-####<span id="4">4.lua容器通用事件通知(重试页面点击通知)</span>
+---
+#### <span id="4">4.lua容器通用事件通知(重试页面点击通知)</span>
 lua function name: ```event```  
 数据格式: luaTable
 
@@ -95,8 +110,8 @@ function event(data)
 end
 ```
 
---
-####5.获取是否能够返回上一页
+---
+#### <span id="5">5.获取是否能够返回上一页</span>
 场景: 在一个小程序有多个页面之间会进行跳转时，通过此方法能够获得是否仍有上一页。(在导航栏隐藏式)能够让开发者通过此方法判断是否需要添加返回按钮  
 function name:```canGoBack```
 
@@ -120,8 +135,8 @@ else
 end
 ```
 
---
-####6.返回上一页
+---
+#### <span id="6">6.返回上一页</span>
 场景: (在导航栏隐藏式)能够让开发者通过此方法让当前小程序返回上一页  
 function name:```goBack```
 
@@ -131,8 +146,8 @@ function name:```goBack```
 Applet:goBack()
 ```
 
---
-####7.关闭当前容器
+---
+#### <span id="7">7.关闭当前容器</span>
 场景: (在导航栏隐藏式)能够让开发者通过此方法让当前小程序关闭  
 function name: ```closeView```
 
@@ -142,8 +157,8 @@ function name: ```closeView```
 Applet:closeView()
 ```
 
---
-####8.存储本地数据
+---
+#### <span id="8">8.存储本地数据</span>
 function name: ```setStorageData```  
 注: 存储key，value都为string，文件名不填则默认以开发者ID来保存，同一个开发者共享一个存储文件，也可以自己填写文件名  
 
@@ -160,8 +175,8 @@ Applet:setStorageData("user", "123456")
 Applet:setStorageData("cartId", nil, "cart")
 ```
 
---
-####9.获取本地存储数据
+---
+#### <span id="9">9.获取本地存储数据</span>
 function name: ```getStorageData```  
 
 | 参数序号 | 描述 | 字段名 | 是否必填 | 字段类型 | 字段说明 |
@@ -182,8 +197,8 @@ return:
 local value = Applet:getStorageData("user")
 ```
 
---
-####10.打开新的小程序
+---
+#### <span id="10">10.打开新的小程序</span>
 场景: 在多个小程序之间需要跳转时调用  
 function name: ```openApplet```
 
@@ -214,8 +229,8 @@ appletTable["appType"] = 1
 Applet:openApplet(appletTable)
 ```
 
---
-####11.打开广告
+---
+#### <span id="11">11.打开广告</span>
 场景: 打开程序化广告时调用  
 function name: ```openAds```
 
@@ -280,8 +295,8 @@ Applet:openAds(adsData)
 
 ```
 
---
-####12.小程序深度统计
+---
+#### <span id="12">12.小程序深度统计</span>
 场景: 一个小程序有多个页面，使用该方法能统计深度，帮助开发者优化访问率不高的页面  
 注: 使用```Native```作为调用类
 function name: ```commonTrack```
