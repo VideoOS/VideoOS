@@ -12,10 +12,10 @@
 
 ## 开发者服务
 
-* [快速开始](docs/devdoc/getting-started/getting-started.md)
+* [快速开始](docs/devdoc/getting-started.md)
   * [开发者入驻](docs/devdoc/introduce/register.md)
-  * [提交开发者资质](docs/devdoc/introduce/submit-qualification.md)
-  * [开发环境](docs/devdoc/introduce/setting-up-the-environment.md)
+  * [提交开发资质](docs/devdoc/introduce/submit-qualification.md)
+  * [搭建开发环境](docs/devdoc/introduce/setting-up-the-environment.md)
   * [体验视频小程序](docs/devdoc/getting-started/experience-miniprogram-demo.md)
     * [创建视频小程序](docs/devdoc/introduce/create-miniprogram.md)
     * [开发调试-iOS](docs/devdoc/introduce/miniprogram-ios-debug.md)
