@@ -1,5 +1,5 @@
-# json schema
-**jsonschema**是描述你的JSON数据格式；JSON模式（应用程序/模式+ JSON）有多种用途，其中之一就是实例验证。验证过程可以是交互式或非交互式的。例如，应用程序可以使用JSON模式来构建用户界面,使互动的内容生成用户输入检查或验证各种来源获取的数据。
+# JSON Schema
+**JSON Schema**是描述你的JSON数据格式；JSON模式（应用程序/模式+ JSON）有多种用途，其中之一就是实例验证。验证过程可以是交互式或非交互式的。例如，应用程序可以使用JSON模式来构建用户界面,使互动的内容生成用户输入检查或验证各种来源获取的数据。
 
 #### 基础数据结构
 ```json
@@ -307,7 +307,7 @@ uiSchema “ui:widget”属性告诉表单应该使用哪个UI小部件来呈现
 }
 ```
 
-##替代小部件
+## 替代小部件
 | 值  |  描述 |类型|
 |--|:--:|--:|
 | radio |	带有true和false作为可选值的单选按钮组 |String|
@@ -328,13 +328,13 @@ uiSchema “ui:widget”属性告诉表单应该使用哪个UI小部件来呈现
 | date    |  默认情况下，使用一个input[type=date]元素; |String |
 | date-time    |  默认情况下，使用input[type=datetime-local]元素。 |String|
 
-###"ui:disabled"
+### "ui:disabled"
 此"ui:disabled"指令将禁用指定属性下的所有子控件
 
-###"ui:readonly"
+### "ui:readonly"
 此"ui:readonly"指令将指定属性下的所有子控件设为只读
 
-###"ui:order"
+### "ui:order"
 ```json
 {
   "type": "object",
@@ -349,16 +349,15 @@ uiSchema “ui:widget”属性告诉表单应该使用哪个UI小部件来呈现
 ```
 此属性允许你指定jsonschema对象的呈现顺序
 
-###"ui:help"
+### "ui:help"
 此属性可以在字段旁边添加文本以指导用户填写表单
 
-###"ui:placeholder"
+### "ui:placeholder"
 此属性可以设置输入框中的空选文本
 
 
 ### 参考文档
-* <a href="https://json-schema.org/understanding-json-schema/reference/object.html" target="_blank">json-schema</a>
-* <a href="https://www.npmjs.com/package/pensee-react-jsonschema-form#for-boolean-fields" target="_blank">react-jsonschema</a>
-* <a href="https://mozilla-services.github.io/react-jsonschema-form/" target="_blank">react-jsonschema-form</a>
-* <a href="https://react-jsonschema-form.readthedocs.io/en/latest/" target="_blank">react-jsonschema-form文档</a>
-
+* <a href="https://json-schema.org/understanding-json-schema/reference/object.html" target="_blank">Understanding JSON Schema</a>
+* <a href="https://www.npmjs.com/package/pensee-react-jsonschema-form#for-boolean-fields" target="_blank">pensee-react-jsonschema-form</a>
+* <a href="https://rjsf-team.github.io/react-jsonschema-form/" target="_blank">react-jsonschema-form</a>
+* <a href="https://react-jsonschema-form.readthedocs.io/en/latest/" target="_blank">react-jsonschema-form</a>

@@ -1,11 +1,13 @@
 #Android开发者如何调试视频小程序
-iOS的调试步骤[点击这里](./iosdebug.md)
+iOS的调试步骤[点击这里](./miniprogram-ios-debug.md)
 ##1. Android开发者APP简介
 - 提供视频小工具/视频小程序的本地调试预览功能
 - 提供线上程序预览功能
 - 支持Android Studio 本地调试
 - 支持动态刷新
-- 完善的[LuaViewSDK文档](http://docs.videojj.com/docs/videoos-lua-app/zh_CN/latest/)
+- 完善的[JSON Schema文档](../../jsonschema.md)
+- 完善的[OS Lua文档](http://op-plat.videojj.com/os-saas/os-lua/index.html)
+- <font color=#FF0000 >以上文档请务必了解</font>
 
 ##2. 视频小程序调试
 

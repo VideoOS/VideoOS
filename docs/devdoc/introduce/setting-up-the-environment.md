@@ -1,5 +1,5 @@
-#下载安装开发环境
-开发者正式开发前需要完成[开发者入驻](./register.md)并[提交相关资质](./submit-qualification.md)，然后配置开发环境。
+# 下载安装开发环境
+开发者正式开发前需要完成[开发者入驻](./register.md)并[提交开发者资质](./submit-qualification.md)，然后配置开发环境。
 
 **下载开发工具**  
 视联网小程序(含小工具)的开发，无需IDE，而是使用移动端开发常见的Xcode和Android Studio进行本地调试、代码编辑、真机预览等。
@@ -8,5 +8,5 @@
 
 **下载工程文件**  
 载入我们的工程代码，查看对应页面的文档内容，利用模拟器进行调试。
->* [点击下载Android工程](https://github.com/VideoOS/VideoOS-Android-SDK/blob/master/docs/index.md)
->* [点击下载iOS工程](https://github.com/VideoOS/VideoOS-iOS-SDK/blob/master/docs/index.md)
+>* [Android工程](https://github.com/VideoOS/VideoOS-Android-SDK/)
+>* [iOS工程](https://github.com/VideoOS/VideoOS-iOS-SDK/)

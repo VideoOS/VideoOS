@@ -1,24 +1,23 @@
-#iOS开发者如何调试视频小程序
-Android的调试步骤[点击这里](./androiddebug.md)
-##1. 开发者APP 简介
+# iOS开发者如何调试视频小程序
+Android的调试步骤[点击这里](./miniprogram-android-debug.md)
+## 1. 开发者APP 简介
 - 提供视频小工具/视频小程序的调试预览功能
 - 提供线上程序预览功能
 - 支持Xcode / Android Studio 本地调试
 - 支持动态刷新
-- 完善的[VideoOS控制台文档](http://docs.videojj.com/docs/videoos-lua-app/zh_CN/latest/)
-- 完善的[json schema控制台文档](http://docs.videojj.com/docs/videoos-lua-app/zh_CN/latest/)
-- 完善的[luaViewSDK文档](http://docs.videojj.com/docs/videoos-lua-app/zh_CN/latest/)
+- 完善的[JSON Schema文档](../../jsonschema.md)
+- 完善的[OS Lua文档](http://op-plat.videojj.com/os-saas/os-lua/index.html)
 - <font color=#FF0000 >以上文档请务必了解</font>
 
-##2.调试开始前的准备工作
+## 2.调试开始前的准备工作
 #### 第一步: Clone [VideoOS-iOS-SDK](https://github.com/VideoOS/VideoOS-iOS-SDK) 到本地
 
 #### 第二步: Xcode打开VPInterfaceControllerDemo工程，选择targets VideoOSDevAPP项目运行，这里面配置好的本地程序可以直接预览
 ![](https://videojj-mobile.oss-cn-beijing.aliyuncs.com/develop_doc/deverAppDocuments/ios%20/ios_1.1.png)  
 <img style="width: 240px" src="https://videojj-mobile.oss-cn-beijing.aliyuncs.com/develop_doc/deverAppDocuments/ios%20/ios_1.2.png"/>
 
-##3.视频小程序调试
-####3.1 视频小工具本地调试-Hello World 
+## 3.视频小程序调试
+#### 3.1 视频小工具本地调试-Hello World 
 1.编写第一个 Hello World 程序代码 并copy 到VideoOSDevAPP/DevAppResource.bundel/interactionLua文件夹下如下是示列代码。  
 <img style="width: 340px" src="https://videojj-mobile.oss-cn-beijing.aliyuncs.com/develop_doc/deverAppDocuments/ios%20/ios_2.1.png"/>
 
@@ -129,13 +128,13 @@ end
 
 5.进入[开发者后台](http://os.videojj.com/developer)的调试视频小工具页面，然后填充相应的jsonschema数据，然后填充相应数据。
 
-####3.2 视频小工具在线调试
+#### 3.2 视频小工具在线调试
 视频小工具在线调试只需要在调试视频小工具UI中填写CommitID、JsonUrl、VideoUrl即可。程序会自动从服务器拉取lua文件、Json文件,并加载显示。
 
-##4.视频小程序调试
+## 4.视频小程序调试
 
-###4.1 视频小程序本地调试
-####第三步: 在assets下创建视频小程序的Lua文件及配置文件
+### 4.1 视频小程序本地调试
+#### 第三步: 在assets下创建视频小程序的Lua文件及配置文件
 视频小程序需要两种格式的文件: lua文件、json文件。
 
 lua文件放在 VideoOSDevAPP/DevAppResource.bundel/ 下。
@@ -144,7 +143,7 @@ json文件为 VideoOSDevAPP/DevAppResource.bundel/config.json。
 
 这里需要注意下json文件是配置文件,并不是lua运行时的数据文件;视频小程序lua运行时的数据文件,由在lua中请求服务器获取。
 
-下图为视频小程序调试文件路径图:  
+下图为视频小程序调试文件路径图:
 <img style="width: 340px" src="https://videojj-mobile.oss-cn-beijing.aliyuncs.com/develop_doc/deverAppDocuments/ios%20/ios_2.1.png"/>
 
 (1) **os_video_test_hotspot.lua**
@@ -237,10 +236,10 @@ template:表示视频小程序的入口lua文件;
 ![Screenshot_20191018-162034_videoOS](https://videojj-mobile.oss-cn-beijing.aliyuncs.com/develop_doc/deverAppDocuments/ios%20/42974f2aff5e8f44e299eac3b12dd721.jpeg)
 
 
-###4.2 视频小程序在线调试
+### 4.2 视频小程序在线调试
 视频小程序在线调试只需要在调试视频小程序UI中填写CommitID、VideoUrl即可。程序会自动从服务器拉取lua文件、Json配置文件,并加载显示。
 
-##5. 使用动态刷新
+## 5. 使用动态刷新
 现在我们的hello world app 已经运行起来的，我们可以看到屏幕中间有红色的 hello world ，这是我们想把他变成黑色的，我们只需更具控制台输出的OS 文件夹路径，找到我们在沙盒重的hellowworld.lua文件，并修改，这时我们只要返回当前播放页面，在重新进入，UI就更新了，如此方便好用，快去试试吧。
 
 ```lua
