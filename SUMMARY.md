@@ -12,9 +12,9 @@
 
 ## 开发者服务
 
-* [开发者入驻](docs/devdoc/introduce/register.md)
-* [提交开发者资质](docs/devdoc/introduce/submit-qualification.md)
 * [快速开始](docs/devdoc/getting-started/getting-started.md)
+  * [开发者入驻](docs/devdoc/introduce/register.md)
+  * [提交开发者资质](docs/devdoc/introduce/submit-qualification.md)
   * [开发环境](docs/devdoc/introduce/setting-up-the-environment.md)
   * [体验视频小程序](docs/devdoc/getting-started/experience-miniprogram-demo.md)
     * [创建视频小程序](docs/devdoc/introduce/create-miniprogram.md)
@@ -33,5 +33,5 @@
 * [开发框架](docs/devdoc/frame/overview.md)
   * [视频小程序事件](docs/devdoc/frame/event.md)
   * [视频小程序Lua容器通用方法](docs/devdoc/frame/lua-app-miniApp.md)
-* [OS Lua](http://op-plat.videojj.com/os-saas/os-lua/index.html)
+* [OS Lua](http://docs.videojj.com/os_lua/)
 * [JSON Schema](docs/jsonschema.md)
