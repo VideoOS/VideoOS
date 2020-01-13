@@ -10,7 +10,9 @@ VideoOS官方将相应的JS API和OpenAPI开放给开发者，从而提供多样
 
 1. 下载安装[开发环境](../introduce/setting-up-the-environment.md)
 2. [创建视频小程序](../introduce/create-miniprogram.md)
-3. 开发并调试视频小程序：[iOS](../introduce/miniprogram-ios-debug.md)，[Android](../introduce/miniprogram-android-debug.md)
+3. 开发并调试视频小程序：
+  * [iOS](../introduce/miniprogram-ios-debug.md)
+  * [Android](../introduce/miniprogram-android-debug.md)
 4. [接入后端服务](./todo-backend-overview.md)，开发并实现完整的小程序
 5. [提交审核](../introduce/submit-new-miniprogram-version.md)并[发布上线](../introduce/publish-miniprogram.md)到专门为C端用户提供的视频桌面市场
 
@@ -19,6 +21,8 @@ VideoOS官方将相应的JS API和OpenAPI开放给开发者，从而提供多样
 
 1. 下载安装[开发环境](../introduce/setting-up-the-environment.md)
 2. [创建视频小工具](../introduce/create-minitool.md)
-3. 开发并调试视频小程序：[iOS](../introduce/miniprogram-ios-debug.md)，[Android](../introduce/miniprogram-android-debug.md)
+3. 开发并调试视频小程序：
+  * [iOS](../introduce/miniprogram-ios-debug.md)
+  * [Android](../introduce/miniprogram-android-debug.md)
 4. 详细了解[小工具文件结构](./minitool-framework.md)
 5. [提交审核](../introduce/submit-new-minitool-version.md)并[发布上线](../introduce/publish-minitool.md)专门为流量主提供的视频小工具市场

@@ -2,7 +2,7 @@
 ![](https://videojj-mobile.oss-cn-beijing.aliyuncs.com/develop_doc/deverAppDocuments/ios%20/cloud.png)
 
 ###一 开发者后台部分
-#####1.1登陆[VideoOS开发者后台](https://os.videojj.com/developer) 注册并登陆账号
+#####1.1登陆[VideoOS开发者后台](https://os.videojj.com/developer?from=devdoc) 注册并登陆账号
 #####1.2开发者资料填写认证
 - 基本信息
 - 个人信息

@@ -1,5 +1,5 @@
 #创建视频小程序
-1. 进入[开发者后台](http://os.videojj.com/developer)，点击左侧菜单“视频小程序”。
+1. 进入[开发者后台](http://os.videojj.com/developer?from=devdoc)，点击左侧菜单“视频小程序”。
 ![](./image/Xnip2019-11-01_13-52-53.png)
 
 2. 点击“创建小程序”按钮，进入页面。

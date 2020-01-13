@@ -1,5 +1,5 @@
 #创建视频小工具
-1. 进入[开发者后台](http://os.videojj.com/developer)，点击左侧菜单“视频小工具”。
+1. 进入[开发者后台](http://os.videojj.com/developer?from=devdoc)，点击左侧菜单“视频小工具”。
 ![](./image/Xnip2019-11-01_16-15-29.png)
 
 2. 点击“创建小工具”按钮，进入页面。
