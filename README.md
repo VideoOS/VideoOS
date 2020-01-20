@@ -11,3 +11,7 @@
 
 ## 智能视频云
 流量主可用于搭建平台或应用的云服务（如存储、转码、CDN加速等基础服务），并加入AI云识别，已上传的视频直接通过云端AI识别出价值的对象，用于Asmp流量变现，免费100G，价格更优惠。
+
+# 接入SDK
+- iOS SDK 接入文档: [VideoOS-iOS-SDK](https://github.com/VideoOS/VideoOS-iOS-SDK/blob/master/docs/index.md)
+- Android SDK 接入文档: [VideoOS-Android-SDK](https://github.com/VideoOS/VideoOS-Android-SDK/blob/master/docs/index.md)

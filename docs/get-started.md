@@ -11,7 +11,7 @@
 ## 接入SDK
 获得平台的AppKey，并根据已创建的平台类型，选择对应的SDK，参考对应的指导流程，在平台端完成接入  
 
-- OS基础服务-iOS: [VideoOS-iOS-SDK](https://github.com/VideoOS/VideoOS-iOS-SDK/blob/master/docs/index.md)
-- OS基础服务-Android: [VideoOS-Android-SDK](https://github.com/VideoOS/VideoOS-Android-SDK/blob/master/docs/index.md)
+- iOS SDK 接入文档: [VideoOS-iOS-SDK](https://github.com/VideoOS/VideoOS-iOS-SDK/blob/master/docs/index.md)
+- Android SDK 接入文档: [VideoOS-Android-SDK](https://github.com/VideoOS/VideoOS-Android-SDK/blob/master/docs/index.md)
 
 流量主的APP/网站成功接入SDK后，在Video OS open后台，完成相应的配置，就能使用了对应的服务了，详细参考以下配置教程

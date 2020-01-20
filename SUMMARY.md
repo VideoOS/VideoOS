@@ -9,6 +9,7 @@
 * [视频小程序](docs/lua-app.md)
 * [智能视频云](docs/vod.md)
 * [下载 DEMO APP](docs/demo.md)
+* [下载 SDK 源代码](docs/source.md)
 
 ## 开发者服务
 
