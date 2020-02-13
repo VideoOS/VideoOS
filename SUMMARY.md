@@ -25,7 +25,7 @@
     * [提交审核](docs/devdoc/introduce/submit-new-miniprogram-version.md)
     * [发布上线](docs/devdoc/introduce/publish-miniprogram.md)
   * [体验视频小工具](docs/devdoc/getting-started/experience-minitool-demo.md)
-    * [创建视频小程序](docs/devdoc/introduce/create-minitool.md)
+    * [创建视频小工具](docs/devdoc/introduce/create-minitool.md)
     * [开发调试-iOS](docs/devdoc/introduce/minitool-ios-debug.md)
     * [开发调试-Android](docs/devdoc/introduce/minitool-android-debug.md)
     * [小工具文件结构](docs/devdoc/getting-started/minitool-framework.md)
