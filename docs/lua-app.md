@@ -1,7 +1,7 @@
 # 视频小程序
 “小程序”这个是由微信最早提出的，国内的其他互联网巨头也相继推出了自己的小程序。小程序是一种新的开放能力，开发者可以快速地开发一个小程序，它可以被便捷地获取和传播，同时具有出色的用户体验。
 “视频小程序”也继承了上述小程序的优势，但是不局限于特定的APP，它运行在客户自己的APP视频播放器之上。目前我们已经适配了市面上占有率较高的几款播放器：阿里云播放器、七牛云播放器、ijkplayer等。
-视频小程序是基于<a href="http://docs.videojj.com/docs/videoos-lua-app" target="_blank">OS Lua</a>方案，一个简单的小程序，由一个几百行的lua脚本加一个几十行的 json 配置文件组成。
+视频小程序是基于<a href="http://docs.videojj.com/os_lua/" target="_blank">OS Lua</a>方案，一个简单的小程序，由一个几百行的lua脚本加一个几十行的 json 配置文件组成。
 
 进入[视频小程序后台](https://os.videojj.com/vprogram#/home)，完成以下两步即可投放一个小程序到你的APP
 ## 创建投放素材
