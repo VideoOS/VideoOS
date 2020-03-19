@@ -6,7 +6,10 @@
 
 * [注册与起步](docs/get-started.md)
 * [视频广告变现](docs/asmp.md)
-* [视频小程序](docs/lua-app.md)
+* [视频小工具](docs/lua-app.md)
+  * [安装小工具](docs/flowdoc/install-minitool.md)
+  * [创建小工具的素材](docs/flowdoc/create-minitool-material.md)
+  * [投放小工具到视频](docs/flowdoc/create-minitool-plan.md)
 * [智能视频云](docs/vod.md)
 * [下载 DEMO APP](docs/demo.md)
 * [下载 SDK 源代码](docs/source.md)
