@@ -112,7 +112,7 @@ end
 ```json
 "template":"my_cloud_hotspot.lua",
 ```
-![](../introduce/image/location.png)
+![](http://op-plat.videojj.com/os-saas/docs/images/location.png)
 
 - 运行工程 进入到视频小工具本地调试页面，我们可以看到终端输出了 show log ，我的lua程序运行起来了，下面我们就开始编写具体功能
 - App运行后填写 开发者后台提供的应用信息 APPKey APPsecret
