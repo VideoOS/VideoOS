@@ -19,7 +19,7 @@ Android的调试步骤[点击这里](./miniprogram-android-debug.md)
 ## 3.视频小程序调试
 #### 3.1 视频小工具本地调试-Hello World 
 1.编写第一个 Hello World 程序代码 并copy 到VideoOSDevAPP/DevAppResource.bundel/interactionLua文件夹下如下是示列代码。  
-<img style="width: 340px" src="https://videojj-mobile.oss-cn-beijing.aliyuncs.com/develop_doc/deverAppDocuments/ios%20/ios_2.1.png"/>
+<img style="width: 340px" src="http://op-plat.videojj.com/os-saas/docs/images/location.png"/>
 
 ```lua
 --FileName: HelloWorld.lua
@@ -144,7 +144,7 @@ json文件为 VideoOSDevAPP/DevAppResource.bundel/config.json。
 这里需要注意下json文件是配置文件,并不是lua运行时的数据文件;视频小程序lua运行时的数据文件,由在lua中请求服务器获取。
 
 下图为视频小程序调试文件路径图:
-<img style="width: 340px" src="https://videojj-mobile.oss-cn-beijing.aliyuncs.com/develop_doc/deverAppDocuments/ios%20/ios_2.1.png"/>
+<img style="width: 340px" src="http://op-plat.videojj.com/os-saas/docs/images/location.png"/>
 
 (1) **os_video_test_hotspot.lua**
 
